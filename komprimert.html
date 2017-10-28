@@ -1,0 +1,150 @@
+
+ <!-- ctrl + f5 vil refreshe CSS-ark også-->
+<!DOCTYPE html>
+	<html>
+
+		<head>
+			<meta charset="utf-8" />  <!--Dette er for å få til skandinaviske språk -->
+			<title> Her skal det stå en tittel</title>
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+			<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+			<link rel="stylesheet" type= "text/css" media =	"all" href="stilark/stil.css"> 
+			
+			<script src = "oppgaver/oppgave1.js"></script>
+			
+			<script src = "functions/absoluttverdi.js"></script>
+			<script src = "oppgaver/oppgave2.js"></script>
+			<script src = "functions/sum.js"></script>
+			<script src = "functions/sammesum.js"></script>
+			<script src = "oppgaver/oppgave5.js"></script>
+			<script src = "oppgaver/oppgave6.js"></script>
+			<script src = "functions/finngjennomsnittutvalg.js"></script>
+			<script src = "functions/partall.js"></script>
+			<script src = "functions/ompartall.js"></script>
+			<script src = "oppgaver/oppgave7.js"></script>
+			<script src = "oppgaver/oppgave9.js"></script>
+			
+			<script>
+			
+				window.onload  = run;
+				
+				function run() {
+					oppgave1();
+					oppgave2();
+					oppgave5();
+					oppgave6();
+					oppgave7();
+					oppgave9();
+				}
+				
+			</script>
+			
+		</head>
+
+		<body>
+			<header>Obligatorisk innlevering 4</header>
+			<section>
+			
+				<h1>Oppgave 4B : Hangman</h1>
+				<p> Fokuser på å rette DENNE, de resterende var bare noe jeg gjorde fordi jeg kjedet meg...</p>
+				<a href ="hangman/hovedfil.html">Trykk her!</a>
+			</section>
+			<div id ="flexWrapper">
+				<section>
+				<h1>Oppgave 4 C: Drøss med eksamensoppgaver</h1>
+					<h1>Oppgave 1: Utskrift av alle tall mellom 0 og 100 ganget med seg selv</h1>
+				
+					<p id ="printAssignment1">	</p>
+				</section>
+				
+				<section>
+					<h1>Oppgave2</h1>
+					<p>Absoluttverdien av -100 = </p>
+					<p id ="printAssignment2"></p>
+				</section>
+				
+				<section>
+					<h2>Oppgave3</h2>
+				
+				</section>
+				
+				<section>
+					<h1>Oppgave4</h1>
+					<p>Denne oppgaven nevnte absolutt ingenting om at vi måtte lage en funksjon, kun at man skal skrive Boolske uttrykk. 
+						Jeg har derfor ikke brukt noen som helst tid på å lage et program som involverer dette				</p>
+					
+					<p class = "boldStuff">
+						//* 1
+
+						regnVindstille = (nedbor>0 && vindhastighet ===0); //Det er regn og vindstille;
+					</p>
+					
+					<p class = "boldStuff">
+					
+						//** 2)
+						
+						blaas	=	(vindretning ===	"NØ"	||	vindretning ===	"N" || vindretning === "NV");
+					</p>
+					
+					<p class = "boldStuff">		
+						//** 3)
+						
+						merFrostSV = (nedbor > 5 || (vindretning	=	"SØ" &&	temperatur	<=	0));
+					</p>
+						
+					<p class = "boldStuff">
+						//** 4)
+						
+						KulingEllerOrkan = (vindhastighet >=	13.9 || vindhastighet <=	17.1) || vindhastighet >	=	32.6 );
+					</p>
+					
+				</section>
+				
+				<section>
+					<h1>Opgave 5</h1>
+				
+					<p id ="paragrafAssignment5">
+					
+					</p>
+				
+				</section>
+				
+				<section>
+					<h1>Oppgave6</h1>
+					<p class = "boldStuff">tall = [3, 42, 7, 69, 12, 9, 37, 17, 10]</p>
+					<p  id ="paragrafAssignment6"></p>
+				</section>
+				
+				<section>
+					<h1>oppgave 7</h1>
+					Fornavn:<input type = "text"	id = "txtNavn"	/>
+				
+				<p>Etternavn: <input type = "text" id ="txtEtternavn" /></p>
+				<p><button type ="button" id ="btnTrykkkOppgave7">Trykk!</button></p>
+				
+				<p id	= "paragrafAssignment7"></p>
+					
+				</section>
+				
+				<section>
+					
+					<h2>Oppgave 9</h2>
+					
+					<p class = "boldStuff">Skriv inn en tekststreng m/. bokstaver i tekstfeltet, og finn ut hvilke bokstaver som ikke har blitt brukt.</p>
+					
+					
+					<textarea rows = "10" cols = "40" id = "txtInputOppgave9"> </textarea>
+					
+					<p>
+						<button	id = "btnInputOppgave9" type	= "button">Make it so!</button>
+					</p>
+					
+					<p id ="paragrafAssignment9"></p>
+					
+					
+				
+				</section>
+			</div>	
+		</body>
+
+	</html>
